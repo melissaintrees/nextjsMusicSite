@@ -1,0 +1,27 @@
+html,
+body {
+  padding: 0;
+  margin: 0 0 100px 0 ;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  background-color: darkred;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
