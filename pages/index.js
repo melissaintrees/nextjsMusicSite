@@ -1,145 +1,51 @@
 import styles from '../components/layout.module.css'
 import Head from 'next/head'
-import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
-
+import ArtistCard from '../components/artistcard'
+import SocialWidget from '../components/socialwidget'
+import { getSortedMusicVideosData } from '../lib/musicvideos'
+import Link from 'next/link'
+import {Col, Image} from 'react-bootstrap'
 
 const pageName = 'Music'
 
-export default function Home() {
+export default function Home({allMusicVideosData}) {
   return (
     <Layout>
-    <div className="container">
       <Head>
+      <link rel="preconnect" href="https://fonts.gstatic.com"/>
+      <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"/>
          <title>{siteTitle} | {pageName}</title>
       </Head>
-          <h1 className={styles.pagesHeading}>{pageName}</h1>
+              <Col lg={6}>
+                  <h1 className={styles.pagesHeading}>{pageName}</h1>
+                  
+                  {/* <ArtistCard /> */}
+                  <Image className={styles.coverImage} title="hello" src="/images/final-frt-cover-jacket-cmyk.jpg" alt="woman, Melissa, pours tea for alien friend, Fran" fluid></Image>
+              </Col>
+              <Col lg={6}>
+                  {/* style="border: 0; width: 100%; height: 406px;" */}
+                  <iframe className="bandCampPlayer" src="https://bandcamp.com/EmbeddedPlayer/album=3003526826/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless><a href="http://melissastmoore.bandcamp.com/album/melissa-st-moore">Melissa St Moore by Melissa St Moore</a></iframe>
+                  <SocialWidget />
+                  <Link href="/tour"><a><h1 className="blogHeadings">Good News!</h1></a></Link>
+                  {allMusicVideosData.map(({title, videoId})=> (
+                    <Link href={`/musicvideos/${title.toLowerCase()}`}><a><h1 className="blogHeadings">{title}</h1></a></Link>
+                  ))}
+              </Col>
 
       <style jsx>{`
-        // .container {
-        //   min-height: 100vh;
-        //   // padding: 0 0.5rem;
-        //   display: flex;
-        //   flex-direction: column;
-        //   justify-content: center;
-        //   // align-items: center;
-        // }
+        .bandCampPlayer {
+          border: 0;
+          width: 100%;
+          height: 406px;
+        }
 
-        // main {
-        //   padding: 5rem 0;
-        //   flex: 1;
-        //   display: flex;
-        //   flex-direction: column;
-        //   justify-content: center;
-        //   align-items: center;
-        // }
-
-        // footer {
-        //   width: 100%;
-        //   height: 100px;
-        //   border-top: 1px solid #eaeaea;
-        //   display: flex;
-        //   justify-content: center;
-        //   align-items: center;
-        // }
-
-        // footer img {
-        //   margin-left: 0.5rem;
-        // }
-
-        // footer a {
-        //   display: flex;
-        //   justify-content: center;
-        //   align-items: center;
-        // }
-
-        // a {
-        //   color: inherit;
-        //   text-decoration: none;
-        // }
-
-        // .title a {
-        //   color: #0070f3;
-        //   text-decoration: none;
-        // }
-
-        // .title a:hover,
-        // .title a:focus,
-        // .title a:active {
-        //   text-decoration: underline;
-        // }
-
-        // .title {
-        //   margin: 0;
-        //   line-height: 1.15;
-        //   font-size: 4rem;
-        // }
-
-        // .title,
-        // .description {
-        //   text-align: center;
-        // }
-
-        // .description {
-        //   line-height: 1.5;
-        //   font-size: 1.5rem;
-        // }
-
-        // code {
-        //   background: #fafafa;
-        //   border-radius: 5px;
-        //   padding: 0.75rem;
-        //   font-size: 1.1rem;
-        //   font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-        //     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        // }
-
-        // .grid {
-        //   display: flex;
-        //   align-items: center;
-        //   justify-content: center;
-        //   flex-wrap: wrap;
-
-        //   max-width: 800px;
-        //   margin-top: 3rem;
-        // }
-
-        // .card {
-        //   margin: 1rem;
-        //   flex-basis: 45%;
-        //   padding: 1.5rem;
-        //   text-align: left;
-        //   color: inherit;
-        //   text-decoration: none;
-        //   border: 1px solid #eaeaea;
-        //   border-radius: 10px;
-        //   transition: color 0.15s ease, border-color 0.15s ease;
-        // }
-
-        // .card:hover,
-        // .card:focus,
-        // .card:active {
-        //   color: #0070f3;
-        //   border-color: #0070f3;
-        // }
-
-        // .card h3 {
-        //   margin: 0 0 1rem 0;
-        //   font-size: 1.5rem;
-        // }
-
-        // .card p {
-        //   margin: 0;
-        //   font-size: 1.25rem;
-        //   line-height: 1.5;
-        // }
-
-        // @media (max-width: 600px) {
-        //   .grid {
-        //     width: 100%;
-        //     flex-direction: column;
-        //   }
-        // }
+        @media (max-width:991px) {
+          .bandCampPlayer {
+            margin-bottom: 2em;
+          }
+    
+        }
       `}</style>
 
       <style jsx global>{`
@@ -155,7 +61,16 @@ export default function Home() {
         }
         
       `}</style>
-    </div>
     </Layout>
   )
 }
+
+export async function getStaticProps() {
+  const allMusicVideosData = getSortedMusicVideosData()
+  return {
+    props: {
+      allMusicVideosData
+    }
+  }
+}
+

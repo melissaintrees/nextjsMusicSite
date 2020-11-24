@@ -1,0 +1,36 @@
+//Your customizations must come before bootstrap import
+
+@import '../scss/bootstrap.scss';
+// $enable-shadows: true;
+// $primary: rgb(0, 19, 223);
+$primary: #F2E8DA;
+$secondary: #8B0100;
+$accent: #ed4213;
+$black:#000;
+$white: #FFF;
+$bg-dark:#000!important;
+$body-color:  #333;
+$body-bg: #f2f2f2;
+
+// overwriting bootstrap react styles here: 
+
+.bg-dark {
+    background-color:$bg-dark;
+}
+  
+.navbar-dark .navbar-nav .nav-link {
+    color: $white;
+    margin-right: 1em;
+    margin-left: .5em;
+}
+
+
+@media (max-width: 767px) { 
+
+    .navbar {
+        justify-content: space-around;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        margin: 0 auto;
+    }
+}

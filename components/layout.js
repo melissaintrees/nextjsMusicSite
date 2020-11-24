@@ -3,7 +3,9 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Head from 'next/head'
 import {MyNav} from './mynav'
-import { Children } from 'react'
+// import MyReactJkMusicPlayer from './musicplayer'
+import {Container, Row} from 'react-bootstrap'
+
 
 const name = 'Melissa St Moore'
 const year = new Date().getFullYear();
@@ -14,8 +16,8 @@ export default function Layout({children}) {
         <div className={styles.container}>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
-                <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"/>
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossOrigin="anonymous"/>
+                <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700?Gugi&display=swap" rel="stylesheet"/>
                 <meta charSet="UTF-8"/>
                 <meta 
                     name="viewport" 
@@ -33,6 +35,7 @@ export default function Layout({children}) {
                 <meta property="fb:admins" content="1033232693403117" />
                 <meta name="google-site-verification" content="9c0Xqoz-QTEk4tXUoKHels4reA7Ljmn4LE_HEHd3FdQ" />
                 <meta name="keywords" content="independent music, dreampop, eccentric dreampop, bandcamp artists, spotify list, spotify, fresh sound, bowie moonage daydream live, avante garde"/>
+                <title>{siteTitle} | pageName</title>
             </Head>
             <header className={styles.headerContainer}>
                 <img src="/images/logo-melissa-st-moore.png" alt="Melissa St Moore Logo" className={styles.logo} />
@@ -40,11 +43,16 @@ export default function Layout({children}) {
             </header>
             <main>
                 <div className={styles.content}>
-                    {children}
+                <Container>
+                    <Row>
+                        {children}
+                    </Row> 
+                </Container>
+                   
                 </div>
             </main>
             <footer className={styles.footer}>
-            <p>Site by <a href="https://www.stmoore.net" >Melissa St Moore </a>
+            <p>Site by <a href="https://www.stmoore.net" >St Moore Dev </a>
                 <i className="fa fa-copyright"></i> {year}</p>
             </footer>
         </div> 

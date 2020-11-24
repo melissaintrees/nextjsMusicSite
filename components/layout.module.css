@@ -6,76 +6,83 @@
     background-color: red;
   } */
 
+ 
   /* Header */
+
         
   .headerContainer {
-    background: white;
+    background: var(--white);
   }
 
   .logo {
-    padding: 2em 1.8em;
+    padding: 1em 1.8em;
   }
   
   img.logo {
-    width: 15%;
+    width: 15em;
   }
   
   .headerChild {
-    background:black;
+    background:var(--black);
     width: 100%;
     display: flex;
     align-items: center;
-    height: 4em;
+    /* height: 3em; */
   }
 
-  .headerChild li {
+  .headerChild {
     font-family: 'Open Sans', sans-serif;
     text-transform: lowercase;
     list-style-type:none;
-    margin-left: 2em;
-    margin-right: 1em;
+ 
     line-height:25px;
     letter-spacing:0.1em;
     font-size:1em;
     font-weight:700;
     text-decoration:none;
-    color: white!important;
+    color: var(--white)!important;
 }
-.headerChild li a:hover,
-.headerChild li a:focus,
-.headerChild li a:active,
+.headerChild a:hover,
+.headerChild a:focus,
+.headerChild a:active,
 .socialGrp a:hover  {
-    color:#ed4213;
+    color:var(--accent)!important;
     text-decoration: none;
 }
+
 .socialGrp {
-    margin-left: auto;
+    margin-left: auto!important;
 }
 
+
+
 .socialGrp i {
-    margin-right: 1em;
-    font-size: 2em;
+  margin-right: 1em;
+  font-size: 1.5em;
 }
+
+
 /* footer */
 .highlight a, .footer a{
-    color:#ed4213 !important;
+    color:var(--accent) !important;
     text-decoration:none;
   }
 
   .footer {
     width:100%;
-    background-color:black;
+    background-color:var(--black);
     position: absolute;
     bottom: 0;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     height:100px;
   }
   
   .footer p {
     font-size:1em;
-    color:white;
+    color:var(--white);
     letter-spacing:1px;
     font-weight: 300;
   }
@@ -88,14 +95,56 @@
 
   .content {
     min-height: 70vh;
-    /* padding-top: 12vh;
-    padding-bottom: 8vh; */
-    /* background: green; */
+    padding-top: 8vh;
   }
 
   .pagesHeading {
     font-family: "Open Sans", sans-serif !important;
-    font-size: 2em;
-    color: orangered;
+    /* font-size: 3em; */
+    color: var(--accent);
     text-transform: lowercase;
+    /* margin-bottom: 1em; */
   }
+
+  .coverImage {
+    animation: circle 3s;
+    padding-bottom: 2em;
+}
+
+
+@keyframes circle {
+  0% { clip-path: circle(0%); }
+  100% { clip-path: circle(100%); }
+}
+
+/* bootstrap responsive breakpoints */
+/* // Medium devices (tablets, 768px and up) bootstraps col-md-* */
+
+@media (max-width:991px) {
+  .content {
+    padding-top: 2vh;
+  }
+  .pagesHeading {
+    text-align: center;
+  }
+
+}
+
+/* Small devices (landscape phones, 576px and up (also applies to below 576 but can be overwritten by the next media querie) bootstraps col-sm */
+
+@media (max-width: 767px) { 
+.socialGrp {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  margin-right: auto!important;
+}
+.socialGrp i {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: auto!important;
+  margin-left: auto;
+}
+.footer p {
+  font-size: .8em;;
+}
+}
