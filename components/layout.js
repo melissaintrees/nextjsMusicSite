@@ -3,7 +3,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Head from 'next/head'
 import {MyNav} from './mynav'
-// import MyReactJkMusicPlayer from './musicplayer'
+
 import {Container, Row} from 'react-bootstrap'
 
 
@@ -17,7 +17,7 @@ export default function Layout({children}) {
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossOrigin="anonymous"/>
-                <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700?Gugi&display=swap" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700?Roboto&display=swap" rel="stylesheet"/>
                 <meta charSet="UTF-8"/>
                 <meta 
                     name="viewport" 
@@ -42,13 +42,14 @@ export default function Layout({children}) {
             </header>
             <main>
                 <div className={styles.content}>
-                <Container>
-                    <Row>
-                        {children}
-                    </Row> 
-                </Container>
-                   
+    
+                    <Container>
+                        <Row>
+                            {children}
+                        </Row> 
+                    </Container>
                 </div>
+  
             </main>
             <footer className={styles.footer}>
             <p>Site by <a href="https://www.stmoore.net" >St Moore Dev </a>
@@ -57,3 +58,7 @@ export default function Layout({children}) {
         </div> 
     )
   }
+
+//   style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"
+//   style="color: #cccccc; text-decoration: none;"
+//   style="color: #cccccc; text-decoration: none;"

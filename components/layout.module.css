@@ -21,7 +21,7 @@
   img.logo {
     width: 15em;
   }
-  
+
   .headerChild {
     background:var(--black);
     width: 100%;
@@ -34,25 +34,30 @@
     font-family: 'Open Sans', sans-serif;
     text-transform: lowercase;
     list-style-type:none;
- 
     line-height:25px;
     letter-spacing:0.1em;
     font-size:1em;
     font-weight:700;
     text-decoration:none;
     color: var(--white)!important;
-}
-.headerChild a:hover,
-.headerChild a:focus,
-.headerChild a:active,
-.socialGrp a:hover  {
-    color:var(--accent)!important;
-    text-decoration: none;
-}
+    margin-left: 1em;
+  }
 
-.socialGrp {
-    margin-left: auto!important;
-}
+  .headerChild > a {
+    margin-right: 2em;
+  }
+
+  .headerChild a:hover,
+  .headerChild a:focus,
+  .headerChild a:active,
+  .socialGrp a:hover  {
+      color:var(--accent)!important;
+      text-decoration: none;
+  }
+
+  .socialGrp {
+      margin-left: auto!important;
+  }
 
 
 
@@ -61,9 +66,12 @@
   font-size: 1.5em;
 }
 
+.regularznav {
+  margin-right: 2em;
+}
 
 /* footer */
-.highlight a, .footer a{
+  a.highlight , .footer a{
     color:var(--accent) !important;
     text-decoration:none;
   }
@@ -100,7 +108,7 @@
 
   .pagesHeading {
     font-family: "Open Sans", sans-serif !important;
-    /* font-size: 3em; */
+    font-weight: bold;
     color: var(--accent);
     text-transform: lowercase;
     /* margin-bottom: 1em; */
@@ -133,6 +141,20 @@
 /* Small devices (landscape phones, 576px and up (also applies to below 576 but can be overwritten by the next media querie) bootstraps col-sm */
 
 @media (max-width: 767px) { 
+
+  img.logo {
+    margin-left: auto;
+    margin-right: auto;
+        width: 20em;
+  }
+
+.headerChild {
+  margin-left: 0em;
+}
+.headerChild > a {
+  margin-right: 0em;
+  margin: .3em 0;
+}
 .socialGrp {
   margin-top: .5em;
   margin-bottom: .5em;

@@ -18,7 +18,7 @@ export default function MyInfoPage(props){
             <Col lg={6}>
                 <h1 className={styles.pagesHeading}>{pageName}</h1>
                 <Image className={styles.coverImage} title="hello" src="/images/Melissa-Retouch-Tea-alien-BrandonRizzuto.jpg" alt="woman, Melissa, pours tea for alien friend, Fran" fluid></Image>
-                <p>photo Brandon Rizzuto</p>
+                
             </Col>
             <Col lg={6}>
                         <p className="infoText">Melissa St Moore is an eccentric dream pop musician in Chicago, IL. She likes to
@@ -44,7 +44,7 @@ export default function MyInfoPage(props){
                         feel to many of the songs, with his high energy guitar playing and industrialized pedals.
                         <br/>
                         <br/> Melissa also works as a Web Developer
-                        where she helps build full stack web experiences for companies such as Statefarm, Michelin, TMobile, and Western Union.
+                        where she helps build full stack web experiences for companies such as Statefarm, Michelin, TMobile, and Western Union. (photo Brandon Rizzuto 2016)
                     </p>
                     </Col>      
             <style jsx>{`
@@ -55,6 +55,7 @@ export default function MyInfoPage(props){
                     color: black;
                     font-weight:500;
                     line-height: 30px;
+                    font-family: 'Roboto', sans-serif;
                 }
 
              

@@ -1,10 +1,15 @@
-import Layout from  '../../components/layout'
+import Head from 'next/head'
+import Layout, { siteTitle } from  '../../components/layout'
 import { getAllMusicVideoTitles, getMusicVideoData } from '../../lib/musicvideos'
 
 export default function MusicVideos({musicVideoData}) {
     return (
         <Layout>
-            {musicVideoData.title}
+      <Head>
+
+         <title>{siteTitle} | {musicVideoData.title}</title>
+      </Head>
+            {/* {musicVideoData.title} */}
             <br />
             <div dangerouslySetInnerHTML={{__html: musicVideoData.contentHtml }} />
         </Layout>

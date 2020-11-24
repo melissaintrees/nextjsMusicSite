@@ -13,6 +13,7 @@
     "gray-matter": "^4.0.2",
     "next": "^10.0.2",
     "react": "^16.13.1",
+    "react-audio-player": "^0.14.0",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.13.1",
     "react-twitter-widgets": "^1.9.5",
