@@ -1,1 +1,8 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+
+# Technologies used: NextJS, SASS,   
+
+I've been making music since I've been making websites to promote the music. In other words, a while - a long fun while! This is the site for my eccentric dream-pop musical venture. This was done in NextJS. 
+
+## Authors
+
+Melissa – [@melissastmoore](https://youtube.com/melissastmoore) – melissastmoore@gmail.com
