@@ -32,8 +32,7 @@ export default function Layout({children}) {
                 <meta property="og:type" content="website"/>
                 <meta property="og:url" content={siteURL} />
                 <meta property="og:image" content={`${siteURL}images/info.1.jpg`} />
-                <meta property="fb:admins" content="1033232693403117" />
-                <meta name="google-site-verification" content="9c0Xqoz-QTEk4tXUoKHels4reA7Ljmn4LE_HEHd3FdQ" />
+
                 <meta name="keywords" content="independent music, dreampop, eccentric dreampop, bandcamp artists, spotify list, spotify, fresh sound, bowie moonage daydream live, avante garde"/>
                 <title>{siteTitle} | pageName</title>
             </Head>
