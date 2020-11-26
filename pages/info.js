@@ -21,32 +21,32 @@ export default function MyInfoPage(props){
                 
             </Col>
             <Col lg={6}>
-                        <p className="infoText">Melissa St Moore is an eccentric dream pop musician in Chicago, IL. She likes to
-                        incorporate symbolism in her songs and sometimes paint pictures with words. Her self-titled debut is
-                        available <a className="span-opport" href="https://melissastmoore.bandcamp.com/">everywhere</a>.
-                        <br/><br/>
-                        A self-taught dancer, conductor of her own train, and comedienne by circumstance, St Moore creates inner and
-                        outer worlds with her creative mix of sound and vision that defies traditional genres. Her inspiration is
-                        rooted in the music and art of the 1970s in NYC. Lately she has been listening to Santigold, Goldfrapp, New Order, 
-                        and Peaches. As a performance artist, video antics and glitchy electronics lend themselves to high
-                        energy vocals, and she has played in many venues throughout LA and NYC, including a spot opening for Nina
-                        Hagen.
-                        <br/>
-                        <br/>
-                
-                        Melissa holds a BA from San Francisco State University and studied Film Music at UCLA with award winning
-                        composer, <a href="http://www.triversmyersmusic.com/" className="span-opport">Elizabeth Myers</a>,
-                        who advised her in the making of the album. Co-Producer and Engineer
-                        Jesse String (Leonard Cohen, Nick Jonas) adds a catchy pop sensibility to the arrangements and Grammy
-                        nominated duo, <a href="https://www.instagram.com/watch/?v=1599374006778834" className="span-opport">The Ditty
-                            Bops</a>, (Bob Dylan, Natalie Merchant) accent two tracks with atmospheric vocals &
-                        piano including on a spontaneous rendition of, "Take me Out to the Ball Game!.” Eric Harvey lends a rock
-                        feel to many of the songs, with his high energy guitar playing and industrialized pedals.
-                        <br/>
-                        <br/> Melissa also works as a Web Developer
-                        where she helps build full stack web experiences for companies such as Statefarm, Michelin, TMobile, and Western Union. (photo Brandon Rizzuto 2016)
-                    </p>
-                    </Col>      
+                <p className="infoText">Melissa St Moore is an eccentric dream pop musician in Chicago, IL. She likes to
+                incorporate symbolism in her songs and sometimes paint pictures with words. Her self-titled debut is
+                available <a className="span-opport" href="https://melissastmoore.bandcamp.com/">everywhere</a>.
+                <br/><br/>
+                A self-taught dancer, conductor of her own train, and comedienne by circumstance, St Moore creates inner and
+                outer worlds with her creative mix of sound and vision that defies traditional genres. Her inspiration is
+                rooted in the music and art of the 1970s in NYC. Lately she has been listening to Santigold, Goldfrapp, New Order, 
+                and Peaches. As a performance artist, video antics and glitchy electronics lend themselves to high
+                energy vocals, and she has played in many venues throughout LA and NYC, including a spot opening for Nina
+                Hagen.
+                <br/>
+                <br/>
+        
+                Melissa holds a BA from San Francisco State University and studied Film Music at UCLA with award winning
+                composer, <a href="http://www.triversmyersmusic.com/" className="span-opport">Elizabeth Myers</a>,
+                who advised her in the making of the album. Co-Producer and Engineer
+                Jesse String (Leonard Cohen, Nick Jonas) adds a catchy pop sensibility to the arrangements and Grammy
+                nominated duo, <a href="https://www.instagram.com/watch/?v=1599374006778834" className="span-opport">The Ditty
+                    Bops</a>, (Bob Dylan, Natalie Merchant) accent two tracks with atmospheric vocals &
+                piano including on a spontaneous rendition of, "Take me Out to the Ball Game!.” Eric Harvey lends a rock
+                feel to many of the songs, with his high energy guitar playing and industrialized pedals.
+                <br/>
+                <br/> Melissa also works as a Web Developer
+                where she helps build full stack web experiences for companies such as Statefarm, Michelin, TMobile, and Western Union. (photo Brandon Rizzuto 2016)
+                </p>
+            </Col>      
             <style jsx>{`
                 .infoText {
                     margin: 10% 0px;
