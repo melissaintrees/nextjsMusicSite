@@ -1,3 +1,6 @@
+
+/* note: becuase of loading order, all bootstrap overrides need to be here.  */
+
 html {
   position: relative;
   min-height: 100%;
@@ -77,4 +80,11 @@ a:hover .blogHeadings{
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+}
+.row {
+  justify-content: center;
+}
+/* music videos blog */
+.contentMusicvideos{
+  text-align: center !important;
 }

@@ -5,13 +5,13 @@ import { getAllMusicVideoTitles, getMusicVideoData } from '../../lib/musicvideos
 export default function MusicVideos({musicVideoData}) {
     return (
         <Layout>
-      <Head>
+            <Head>
 
-         <title>{siteTitle} | {musicVideoData.title}</title>
-      </Head>
+                <title>{siteTitle} | {musicVideoData.title}</title>
+            </Head>
             {/* {musicVideoData.title} */}
             <br />
-            <div dangerouslySetInnerHTML={{__html: musicVideoData.contentHtml }} />
+            <div className="contentMusicvideos" dangerouslySetInnerHTML={{__html: musicVideoData.contentHtml }} />
         </Layout>
     )
 }
