@@ -5,6 +5,7 @@ import Layout, { siteTitle } from '../components/layout'
 import {Col} from 'react-bootstrap'
 import YouTube from 'react-youtube'
 
+const YT_API_KEY = process.env.YT_API_KEY
 const pageName = 'Show'
 const opts = {
     // height: '185px',
@@ -26,10 +27,9 @@ function TourPage({videosData}){
             </Head>
                 {
                     resData[0].map((titl, id) => {
-                        if (titl.snippet.title.includes("BAF")) {
+                        {/* if (titl.snippet.title.includes("BAF")) { */}
                             bafArr.push(titl.id.videoId)
-
-                        } 
+                        {/* }  */}
                     }
                     )}
                     {
@@ -79,9 +79,11 @@ function TourPage({videosData}){
     // This function gets called at build time
     export async function getStaticProps() {
         // Call an external API endpoint to get videosData
-        const res = await fetch('https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCTBPKPdlmmh801HUD3RU3rA&maxResults=30&order=date&key=AIzaSyC_agb1LudB3s3tzYyhEZJVfg6T-gTl1xM')
+        // https://console.cloud.google.com/iam-admin/quotas?pli=1&project=melissastmoore&folder=&organizationId=
+        const res = await fetch(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=50&playlistId=${BAF_PLAYLIST_ID}&prettyPrint=true&key=${YT_API_KEY}`)
+
         const videosData = await res.json()
-    
+       
         // By returning { props: { videosData } }, the VideoPage component
         // will receive `videosData` as a prop at build time
         return {

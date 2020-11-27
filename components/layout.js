@@ -35,6 +35,8 @@ export default function Layout({children}) {
 
                 <meta name="keywords" content="independent music, dreampop, eccentric dreampop, bandcamp artists, spotify list, spotify, fresh sound, bowie moonage daydream live, avante garde"/>
                 <title>{siteTitle} | pageName</title>
+                <script src="https://www.youtube.com/player_api"></script>
+                
             </Head>
             <header className={styles.headerContainer}>
                 <img src="/images/logo-melissa-st-moore.png" alt="Melissa St Moore Logo" className={styles.logo} />
