@@ -86,6 +86,8 @@ export async function getStaticProps() {
 
     // https://console.cloud.google.com/iam-admin/quotas?pli=1&project=melissastmoore&folder=&organizationId=
     const res = await fetch(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=50&playlistId=${BAF_PLAYLIST_ID}&prettyPrint=true&key=${YT_API_KEY}`)
+
+    console.log(res)
     {/* TODO: test the length of res against the store BAFVIDEOID array?  */ }
     const videosData = await res.json()
 
