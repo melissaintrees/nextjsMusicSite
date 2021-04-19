@@ -1,7 +1,7 @@
 
 # Technologies used: NextJS, SASS,   
 
-I've been making music since I've been making websites to promote the music. In other words, a while - a long fun while! This is the site for my eccentric dream-pop musical venture. This was done in NextJS. 
+I've been making music since I've been making websites to promote the music. In other words, a while - a long fun while! This is the site for my eccentric dream-pop musical venture Melissa In Trees. This was done in NextJS. 
 
 ## Authors
 
