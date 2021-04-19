@@ -30,7 +30,7 @@ export default function MyInfoPage(props) {
             </Col>
             <style jsx>{`
                 .infoText {
-                    margin: 10% 0px;
+                    margin: 15% 0px;
                     text-align: left;
                     font-size: 16px;
                     color: black;
