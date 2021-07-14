@@ -1,8 +1,11 @@
 
-# Technologies used: NextJS, SASS,   
+# Technologies used: NextJS, SASS, JavaScript, YouTube API, ReactJS, Mail Chimp, SalesForce Pardot, Adobe Premiere
 
-I've been making music since I've been making websites to promote the music. In other words, a while - a long fun while! This is the site for my eccentric dream-pop musical venture named the same as my name. This was done in NextJS. 
+I started coding, social media management, email marketing, and making videos to promote my music business. My music is recorded keyboards, drum machines, live instruments and vocals using a program Apple Logic. The current iteration of my music site was built using Next JS, though I often rebuild it using new technologies. 
+
+Currently, I am scaling a digital marketing plan involving the promotion of a new material using a holistic ground up approach. 
+
 
 ## Authors
 
-Melissa – [@melissastmoore](https://youtube.com/melissastmoore) – melissastmoore@gmail.com
+Melissa – [@melissastmoore](https://www.melissastmoore.com) – melissastmoore@gmail.com
