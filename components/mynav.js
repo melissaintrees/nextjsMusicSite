@@ -21,7 +21,7 @@ export const MyNav = () => {
           <Link href="/">
             <a className={router.pathname == "/" ? `${styles.highlight}` : ""} >
               home
-      </a>
+            </a>
           </Link>
 
           <a href="https://smarturl.it/MaDebut">Listen</a>
@@ -30,24 +30,24 @@ export const MyNav = () => {
           <Link href="/info">
             <a className={router.pathname == "/info" ? `${styles.highlight}` : ""} >
               info
-        </a>
+            </a>
           </Link>
           <Link href="/videos">
             <a className={router.pathname == "/videos" ? `${styles.highlight}` : ""} >
               videos
-      </a>
+            </a>
           </Link>
           <Link href="/show">
             <a className={router.pathname == "/show" ? `${styles.highlight}` : ""} >
               show
-      </a>
+            </a>
           </Link>
 
           <div className={styles.socialGrp}>
 
             <Nav.Item>
-              <a href="https://mailchi.mp/bacbde16cf94/mailinglist" ><i className="far fa-newspaper"></i></a>
-              <a href="https://www.instagram.com/melissa_in_trees" ><i className="fab fa-instagram"></i></a>
+              <a href="http://eepurl.com/cL95sX" ><i className="far fa-newspaper"></i></a>
+              <a href="https://www.instagram.com/melissastmoore" ><i className="fab fa-instagram"></i></a>
               <a href="http://www.youtube.com/melissastmoore" ><i className="fab fa-youtube"></i></a>
               <a href="https://open.spotify.com/artist/4RUivryHDsx8Q9s6kcs3YP" ><i className="fab fa-spotify"></i></a>
             </Nav.Item>
@@ -62,3 +62,4 @@ export const MyNav = () => {
 
   );
 };
+queueMicrotask
