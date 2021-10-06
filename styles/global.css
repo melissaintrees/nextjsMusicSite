@@ -1,6 +1,6 @@
 
 /* note: becuase of loading order, all bootstrap overrides need to be here.  */
-
+/* 
 html {
   position: relative;
   min-height: 100%;
@@ -16,6 +16,16 @@ body {
 
 * {
   box-sizing: border-box;
+} */
+
+@font-face {
+  font-family: 'Futura';
+  src: local('Futura Bold'), local('Futura-Bold'),
+      url('../public/fonts/Futura-Bold.woff2') format('woff2'),
+      url('../public/fonts/Futura-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 a {

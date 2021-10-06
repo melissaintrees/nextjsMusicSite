@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from './layout.module.css'
 import { Follow } from 'react-twitter-widgets'
-export default function SocialWidget () {
+export default function SocialWidget() {
     return (
         <div className="blah">
             <br />
@@ -22,9 +22,9 @@ export default function SocialWidget () {
                 <input type="image" src="https://i.imgur.com/uyF3zgm.png" border="0" name="submit" title="Help support future music and tv show ventures by Donating!" alt="Donate with PayPal button" />
                 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
             </form> */}
-               {/* style="border: 0; width: 100%; height: 406px;" */}
-                  {/* <h3>Hey, If you like what you hear please listen on spotify, subscribe to youtube and follow on twitter!!</h3> */}
-                  {/* <iframe className="bandCampPlayer" src="https://bandcamp.com/EmbeddedPlayer/album=3003526826/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless><a href="http://melissastmoore.bandcamp.com/album/melissa-st-moore">Melissa St Moore by Melissa St Moore</a></iframe> */}
+            {/* style="border: 0; width: 100%; height: 406px;" */}
+            {/* <h3>Hey, If you like what you hear please listen on spotify, subscribe to youtube and follow on twitter!!</h3> */}
+            {/* <iframe className="bandCampPlayer" src="https://bandcamp.com/EmbeddedPlayer/album=3003526826/size=large/bgcol=333333/linkcol=e32c14/artwork=none/transparent=true/" seamless><a href="http://melissastmoore.bandcamp.com/album/melissa-st-moore">Melissa St Moore by Melissa St Moore</a></iframe> */}
             <br />
         </div>
     )

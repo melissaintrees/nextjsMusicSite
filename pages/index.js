@@ -5,35 +5,36 @@ import ArtistCard from '../components/artistcard'
 import SpotifyWidget from '../components/spotifywidget'
 import { getSortedMusicVideosData } from '../lib/musicvideos'
 import Link from 'next/link'
-import {Col, Image} from 'react-bootstrap'
+import { Col, Image } from 'react-bootstrap'
 
 const pageName = 'Music'
 
-export default function Home({allMusicVideosData}) {
+export default function Home({ allMusicVideosData }) {
   return (
     <Layout>
       <Head>
-      <link rel="preconnect" href="https://fonts.gstatic.com"/>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
-         <title>{siteTitle} | {pageName}</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        {/* <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" /> */}
+        {/* <link rel="stylesheet" href="https://use.typekit.net/yuf1tsq.css"></link> */}
+        <title>{siteTitle} | {pageName}</title>
       </Head>
-              <Col lg={6}>
-                  <h1 className={styles.pagesHeading}>{pageName}</h1>
-                  
-                  <ArtistCard />
-                  {/* <Image className={styles.coverImage} title="hello" src="/images/final-frt-cover-jacket-cmyk.jpg" alt="woman, Melissa, pours tea for alien friend, Fran" fluid></Image> */}
-              </Col>
-              <Col lg={6} className="justify-content-center">
-      
-                  <SpotifyWidget />
-        
-                  <div className="aroundDeBlog">
-                    <h3>lyrics</h3>
-                      {allMusicVideosData.map(({title, videoId})=> (
-                        <Link href={`/musicvideos/${title.toLowerCase()}`}><a><h1 className="blogHeadings">{title}</h1></a></Link>
-                      ))}
-                  </div>
-              </Col>
+      <Col lg={6}>
+        <h1 className={styles.pagesHeading}>{pageName}</h1>
+
+        <ArtistCard />
+        {/* <Image className={styles.coverImage} title="hello" src="/images/final-frt-cover-jacket-cmyk.jpg" alt="woman, Melissa, pours tea for alien friend, Fran" fluid></Image> */}
+      </Col>
+      <Col lg={6} className="justify-content-center">
+
+        <SpotifyWidget />
+
+        <div className="aroundDeBlog">
+          <h3>lyrics</h3>
+          {allMusicVideosData.map(({ title, videoId }) => (
+            <Link href={`/musicvideos/${title.toLowerCase()}`}><a><h1 className="blogHeadings">{title}</h1></a></Link>
+          ))}
+        </div>
+      </Col>
 
       <style jsx>{`
         .bandCampPlayer {
