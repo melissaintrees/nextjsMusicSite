@@ -8,12 +8,26 @@ import '../styles/global.css'
 import Layout from '../components/layout'
 import UnderConstruction from 'react-under-construction';
 import 'react-under-construction/build/css/index.css';
-
+import Head from 'next/head';
 
 export default function myApp({ Component, pageProps }) {
     return (
 
         <div>
+            <Head>
+                <link
+                    rel="preload"
+                    href="../public/fonts/Futura-Bold.woff"
+                    as="font"
+                    crossOrigin=""
+                />
+                <link
+                    rel="preload"
+                    href="../public/fonts/Futura-Bold.woff"
+                    as="font"
+                    crossOrigin=""
+                />
+            </Head>
 
             {/* // <Component {...pageProps} /> */}
             <UnderConstruction

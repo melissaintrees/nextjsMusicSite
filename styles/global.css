@@ -21,8 +21,8 @@ body {
 @font-face {
   font-family: 'Futura';
   src: local('Futura Bold'), local('Futura-Bold'),
-      url('./Futura-Bold.woff2') format('woff2'),
-      url('./Futura-Bold.woff') format('woff');
+      url('../public/fonts/Futura-Bold.woff2') format('woff2'),
+      url('../public/fonts/Futura-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
