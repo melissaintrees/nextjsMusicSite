@@ -39,13 +39,13 @@ export default function myApp({ Component, pageProps }) {
                         maxWidth: '440px',
                     }
                 }}
-                // subscribe={{
-                //     placeholder: 'Your Email Here',
-                //     buttonText: 'Subscribe',
-                //     onSubmit: (value) => {
-                //         console.log('user typed email :', value);
-                //     }
-                // }}
+                subscribe={{
+                    placeholder: 'Your Email Here',
+                    buttonText: 'Subscribe',
+                    onSubmit: (value) => {
+                        console.log('user typed email :', value);
+                    }
+                }}
                 links={[
                     {
                         url: 'https://www.tiktok.com/@melissastmoore_',
