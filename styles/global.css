@@ -103,3 +103,237 @@ a:hover .blogHeadings{
 .navbar-dark .navbar-toggler {
   border-color: transparent;
 }
+
+html {
+  height: 100%
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  /* font-weight: 300; */
+  overflow: hidden;
+  font-family: Futura, sans-serif;
+  /* font-weight: 700; */
+  font-style: normal;
+}
+
+#root,
+body {
+  height: 100%
+}
+
+.UnderConstruction {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  
+}
+
+.UnderConstruction,
+.UnderConstruction-overlay {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 100vh;
+  width: 100vw;
+}
+
+.UnderConstruction-overlay {
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+.UnderConstruction-container {
+  margin-top: -50px;
+  width: 100%;
+  max-width: 800px;
+  position: relative
+}
+
+@media (max-width:700px) {
+  .UnderConstruction-container {
+      margin-top: -120px
+  }
+}
+
+.UnderConstruction-logo-container {
+  text-align: center
+}
+
+.UnderConstruction-logo {
+  width: 61.33%;
+  margin: 0 auto;
+}
+
+/* .UnderConstruction-title {
+  margin: 0 auto;
+  margin-top: 18px;
+  font-size: 40px;
+  text-align: center
+} */
+
+@media (max-width:700px) {
+  .UnderConstruction-title {
+      font-size: 30px
+  }
+}
+
+.UnderConstruction-description {
+  margin: 0 auto;
+  /* margin-top: 18px; */
+  font-size: 25px;
+  letter-spacing: .5;
+  line-height: 32px;
+  text-align: center;
+  color: #FAE700;
+}
+
+.UnderConstruction-input:-ms-input-placeholder {
+  color:#fc0d00;
+  font-size: 25px;
+}
+
+@media (max-width:700px) {
+  .UnderConstruction-description {
+      font-size: 16px
+  }
+}
+
+.UnderConstruction-notify {
+  margin-top: 30px;
+  text-align: center
+}
+
+@media (max-width:700px) {
+  .UnderConstruction-notify {
+      max-width: 100%;
+      padding: 0 15px
+  }
+}
+
+.UnderConstruction-input {
+ 
+  width: 230px;
+  height: 50px;
+  background-color: #302255;
+  color: #FF0C0C;
+  border: 4px solid #FAE700;
+  padding-left: 15px;
+  font-size: 14px;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.UnderConstruction-input::-webkit-input-placeholder {
+  color: #FF0C0C;
+  font-size: 20px
+}
+
+.UnderConstruction-input:-ms-input-placeholder,
+.UnderConstruction-input::-ms-input-placeholder {
+  color: #FF0C0C;
+  font-size: 14px
+}
+
+.UnderConstruction-input::placeholder {
+  color: #FF0C0C;
+  font-size: 14px
+}
+
+@media (max-width:700px) {
+  .UnderConstruction-input {
+      padding-left: 10px;
+      width: 100%
+  }
+}
+
+.UnderConstruction-input:focus {
+  border-color: #fff;
+  outline: none
+}
+
+.UnderConstruction-notify-button {
+  width: 120px;
+  height: 50px;
+  background-color: #29A0AC;
+  border: 0;
+  color: #fff;
+  /* border-radius: 4px; */
+  margin-left: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in
+}
+
+@media (max-width:700px) {
+  .UnderConstruction-notify-button {
+      width: 100%;
+      margin: 15px 0
+  }
+}
+
+.UnderConstruction-notify-button:hover {
+  background-color: #fc0d00
+}
+
+.UnderConstruction-notify-button:focus {
+  outline: none
+}
+
+.UnderConstruction-social-networks {
+  width: 100%;
+  /* position: fixed; */
+  text-align: center;
+  /* bottom: 30px */
+  margin-top: 25px;
+}
+
+.UnderConstruction-social-networks-link {
+  color: #fff;
+  opacity: .9;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  margin-right: 20px;
+  cursor:grab;
+}
+
+.UnderConstruction-social-networks-link:hover {
+  opacity: .7;
+  text-decoration: underline
+}
+
+.UnderConstruction-social-networks-link:last-child {
+  margin-right: 0
+}
+
+.UnderConstruction-social-networks-image {
+  width: 36px
+}
+
+.UnderConstruction-social-networks-text {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px
+}
+
+/*# sourceMappingURL=index.css.map*/
