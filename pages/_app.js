@@ -35,7 +35,7 @@ export default function myApp({ Component, pageProps }) {
                         maxWidth: '440px',
                         FontFace: 'fonts/Futura-Bold.woff',
                         fontFamily: 'Futura',
-
+                        fontSize: "22px",
                         paddingTop: '30px',
 
                     }
