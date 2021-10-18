@@ -21,11 +21,11 @@ export default function MyInfoPage(props) {
             </Col>
             <Col lg={6}>
                 <p className="infoText">Melissa St Moore (FKA SKATES) is a singer, music producer and content creator from Los Angeles, CA. She creates eccentric dream pop, indy rock, sing song raps, that are influenced by surreal darkness & realistic brightness.
-                <br /><br />
-                Besides music, she owns a web development company, St Moore Dev, that focuses on using technology to help people, and hosts a Good News program called Bananas AF through her YouTube channel, along with Videos, Covers, and Web Tutorials.
-                <br />
+                    <br /><br />
+                    Besides music, she owns a web development company, St Moore Dev, that focuses on using technology to help people, and hosts a Good News program called Bananas AF through her YouTube channel, along with Videos, Covers, and Web Tutorials.
                     <br />
-                Melissa released an 8 song debut album which is being released as singles over the course of 2021.
+                    <br />
+                    Melissa released an 8 song debut album which is being released as singles over the course of 2021.
                 </p>
             </Col>
             <style jsx>{`
@@ -36,7 +36,7 @@ export default function MyInfoPage(props) {
                     color: black;
                     font-weight:500;
                     line-height: 30px;
-                    font-family: 'Roboto', sans-serif;
+                    font-family: 'Futura', sans-serif;
               
                 }
 

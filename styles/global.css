@@ -21,8 +21,8 @@ body {
 @font-face {
   font-family: 'Futura';
   src: local('Futura Bold'), local('Futura-Bold'),
-      url('../public/fonts/Futura-Bold.woff2') format('woff2'),
-      url('../public/fonts/Futura-Bold.woff') format('woff');
+      url('/fonts/Futura-Bold.woff2') format('woff2'),
+      url('/fonts/Futura-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -177,27 +177,38 @@ body {
   margin: 0 auto;
 }
 
-/* .UnderConstruction-title {
+.UnderConstruction-title {
   margin: 0 auto;
   margin-top: 18px;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center
-} */
+}
 
 @media (max-width:700px) {
   .UnderConstruction-title {
-      font-size: 30px
+      font-size: 25px
   }
 }
 
 .UnderConstruction-description {
-  margin: 0 auto;
+  margin: 0 auto !important;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px 0px 20px 0px;
   /* margin-top: 18px; */
   font-size: 25px;
   letter-spacing: .5;
   line-height: 32px;
   text-align: center;
-  color: #FAE700;
+  color: orangered;
+}
+.UnderConstruction-description:hover {
+  color:#fc0d00;
 }
 
 .UnderConstruction-input:-ms-input-placeholder {
@@ -299,9 +310,9 @@ body {
 
 .UnderConstruction-social-networks {
   width: 100%;
-  /* position: fixed; */
+  position: initial !important;
   text-align: center;
-  /* bottom: 30px */
+  bottom:inherit !important;
   margin-top: 25px;
 }
 
@@ -310,15 +321,15 @@ body {
   opacity: .9;
   display: inline-block;
   text-decoration: none;
-  -webkit-transition: all .3s ease-in;
+  /* -webkit-transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  transition: all .3s ease-in; */
   margin-right: 20px;
   cursor:grab;
 }
 
 .UnderConstruction-social-networks-link:hover {
-  opacity: .7;
+  opacity: .7 !important;
   text-decoration: underline
 }
 
@@ -327,7 +338,7 @@ body {
 }
 
 .UnderConstruction-social-networks-image {
-  width: 36px
+  width: 36px !important;
 }
 
 .UnderConstruction-social-networks-text {
